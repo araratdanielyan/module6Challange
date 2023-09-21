@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- Integrating Bulma CSS Framework and Styles.css file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class = "navbar is-primery has-text-white has-background-link is-size-2">
+      <h1 class ="navbar-end" style = "margin-right: 400px;">Weather Dashboard</h1>
+    </nav>
+
+    
+    <!-- Search Area -->
+    <div class = "searchBar" style = "margin-left: 10px;">
+        <h2 class = "searchTitle is-size-3 has-text-weight-bold	">Search for a City: </h2>
+        <textarea class = "searchArea is-large" placeholder = "Las Vegas" type = "text" id="searchId" rows="3" style="width: 332px; height: 47px;"></textarea>
+    </div>
+
+    <!-- Adding the Search Button  -->
+    <button class = "button is-medium is-info" type="submit">Search</button>
+
+    <!-- Adding a seperation line -->
+    <div class="line" style = "border-bottom: 2px solid rgb(18, 2, 2); margin-top: 10px; margin-left: 10px; width: 332px;"></div> 
+
+    <!-- Search History -->
+    <div class = "searshHistory is-flex is-flex-wrap-wrap is-flex-direction-column is-justify-content-space-between">
+      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
+      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
+      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
+      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
+      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
+      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
+      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
+      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
+    </div>
+
+    <!-- Information about chosen city -->
+    <div class = "cityInfo">
+      <h2 class = "cityName is-size-4 has-text-weight-bold">City Name And Date</h2>
+      <h3 class = "temp is-size-5">Temp:</h3>
+      <h3 class = "wind is-size-5">Wind:</h3>
+      <h3 class = "humid is-size-5">Humidity:</h3>
+    </div>
+
+    <!-- Five Day Forecast and columns -->
+     <h2 class = "fiveDayForecast is-size-4 has-text-weight-bold">Five Day Forecast</h2>
+    
+    <div class="columns">
+      <div class="column is-half">
+        dayOne
+      </div>
+      <div class="column is-half">
+        dayTwo
+      </div>
+      <div class="column is-half">
+        dayThree
+      </div>
+      <div class="column is-half">
+        dayFour
+      </div>
+      <div class="column is-half is-link">
+        dayFive
+      </div>
+    </div>
+    
+    <!-- Integrating script.js -->
+	  <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

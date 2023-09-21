@@ -1,0 +1,37 @@
+/* Button location */
+.button {
+    width: 332px; 
+    height: 35px; 
+    margin-left: 10px;
+}
+/* History bar location */
+.history {
+    width: 332px; 
+    height: 35px; 
+    margin-top: 12px; 
+    margin-left: 10px;
+    border: none;
+}
+/* Selected City info location */
+.cityInfo {
+  position: absolute;
+  left: 400px;
+  bottom: 480px;
+  border-style: solid;
+  padding-right: 50vw;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* Fife Day Forecast text location */
+.fiveDayForecast {
+  position: absolute;
+  left: 400px;
+  bottom: 395px;
+}
+/* Five day forecast content location */
+.columns {
+  position: absolute;
+  left: 400px;
+  bottom: 300px;
+}
