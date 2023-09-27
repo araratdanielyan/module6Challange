@@ -4,6 +4,25 @@
     height: 35px; 
     margin-left: 10px;
 }
+
+/* Search bar */
+.searchBar {
+  margin-left: 10px;
+}
+
+.searchArea {
+  width: 332px; 
+  height: 47px;
+}
+
+/* Adding seperation line */
+.line {
+  border-bottom: 2px solid rgb(18, 2, 2); 
+  margin-top: 10px; 
+  margin-left: 10px; 
+  width: 332px;
+}
+
 /* History bar location */
 .history {
     width: 332px; 

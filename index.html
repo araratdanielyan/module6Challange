@@ -16,27 +16,20 @@
 
     
     <!-- Search Area -->
-    <div class = "searchBar" style = "margin-left: 10px;">
+    <div class = "searchBar">
         <h2 class = "searchTitle is-size-3 has-text-weight-bold	">Search for a City: </h2>
-        <textarea class = "searchArea is-large" placeholder = "Las Vegas" type = "text" id="searchId" rows="3" style="width: 332px; height: 47px;"></textarea>
+        <textarea class = "searchArea is-large" placeholder = "Las Vegas" type = "text" id="searchId" rows="3"></textarea>
     </div>
 
     <!-- Adding the Search Button  -->
     <button class = "button is-medium is-info" type="submit">Search</button>
 
     <!-- Adding a seperation line -->
-    <div class="line" style = "border-bottom: 2px solid rgb(18, 2, 2); margin-top: 10px; margin-left: 10px; width: 332px;"></div> 
+    <div class="line"></div> 
 
     <!-- Search History -->
     <div class = "searshHistory is-flex is-flex-wrap-wrap is-flex-direction-column is-justify-content-space-between">
-      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
-      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
-      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
-      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
-      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
-      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
-      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
-      <button class = "history is-medium has-background-grey-light" type="submit">Search</button>
+  
     </div>
 
     <!-- Information about chosen city -->
@@ -67,7 +60,26 @@
         dayFive
       </div>
     </div>
-    
+
+    <!-- Integrating Day.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+      integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+      crossorigin="anonymous"
+    ></script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" 
+      integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w==" 
+      crossorigin="anonymous"
+    ></script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js" 
+      integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg==" 
+      crossorigin="anonymous"
+    ></script>
+    <!-- Integrating jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     <!-- Integrating script.js -->
 	  <script src="script.js"></script>
   </body>
