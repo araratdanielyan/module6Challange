@@ -10,21 +10,11 @@ $(document).ready(function () {
         let storageData = JSON.parse(localStorage.getItem('searches'))
         if (storageData && storageData.length > 0) {
             storageData.forEach((item) => {
-                let button = '<button class = "buttonHistory" data-id="' + item + '" type="submit">' + item + '</button>';
+                let button = '<button class="buttonHistory" data-id="' + item + '" type="submit">' + item + '</button>';
                 $(button).appendTo('.searshHistory');
             });
         }
-    }
-
-    $('.buttonHistory').click((e) => {
-        let text = document.querySelector('.buttonHistory');
-        let city = text.textContent;
-
-        fetchGeoCodes(city);
-    });
-
-
-
+    };
 
     updateHistory();
 
@@ -142,7 +132,7 @@ $(document).ready(function () {
 
 
     //Initiating Api call using longitude and latitude
-    function fetchWeather(data){
+    function fetchWeather(city, data){
         let {lat} = data;
         let {lon} = data;
 
@@ -152,8 +142,6 @@ $(document).ready(function () {
                 return res.json();
             })
             .then(function (data) {
-
-                    console.log("data = ", data);
                     renderWeather(city, data);
             })
             .catch(function (err) {
@@ -173,8 +161,7 @@ $(document).ready(function () {
                 if (!data[0]) {
                     alert('Location not found');
                 } else {
-                    console.log("data = ", data);
-                    fetchWeather(data[0]);
+                    fetchWeather(city, data[0]);
                 }
             })
             .catch(function (err) {
@@ -194,9 +181,16 @@ $(document).ready(function () {
         storageData.push(text);
         storageData = JSON.stringify(storageData);
         localStorage.setItem('searches', storageData);
-        let button = '<button class = "history" data-id="' + text + '" type="submit">' + text + '</button>';
+        let button = '<button class="buttonHistory" data-id="' + text + '" type="submit">' + text + '</button>';
         $(button).appendTo('.searshHistory');
         fetchGeoCodes(city);
+    });
+
+    $('.buttonHistory').each((key,item) => {
+        $(item).click((e) =>{
+            let city = $(e.target).text();
+            fetchGeoCodes(city);
+        })
     });
 
 });

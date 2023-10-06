@@ -29,31 +29,21 @@
 /* Container to us Flexbox */
 .container {
   display: flex;
-  width: 100wh;
-  height: 100wh;
-  justify-content: space-around;
+  align-content: center;
 }
 
 .searchHistoryContainer {
-  margin: 10px;
-}
-
-.weaqtherInfo {
   margin: 5px;
 }
 
-/* History bar location */
-.history {
-    width: 332px; 
-    height: 35px; 
-    margin-top: 12px; 
-    margin-left: 10px;
-    border: none;
+.weatherInfo {
+  margin: 5px;
 }
+
 /* Selected City info location */
 .cityInfo {
   border-style: solid;
-  padding-right: 30vw;
+  padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
   text-align: left;
@@ -91,10 +81,3 @@
   margin-top: 5px;
 }
 
-.history {
-  background-color: hsl(0, 0%, 71%);
-  border-radius: 5px;
-  height: 35px;
-  font-size: 20px;
-  margin-top: 5px;
-}
