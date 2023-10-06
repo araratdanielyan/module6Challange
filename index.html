@@ -11,54 +11,93 @@
   <body>
     <!-- Navigation Bar -->
     <nav class = "navbar is-primery has-text-white has-background-link is-size-2">
-      <h1 class ="navbar-end" style = "margin-right: 400px;">Weather Dashboard</h1>
+      <h1 class ="navbar-end">Weather Dashboard</h1>
     </nav>
 
-    
-    <!-- Search Area -->
-    <div class = "searchBar">
-        <h2 class = "searchTitle is-size-3 has-text-weight-bold	">Search for a City: </h2>
-        <textarea class = "searchArea is-large" placeholder = "Las Vegas" type = "text" id="searchId" rows="3"></textarea>
-    </div>
+    <div class = "container">
+      <!-- Search Area -->
+      <div class="searchHistoryContainer">
+        <div class = "searchBar">
+            <h2 class = "searchTitle is-size-3 has-text-weight-bold	">Search for a City: </h2>
+            <textarea class = "searchArea is-large" placeholder = "Las Vegas" type = "text" id="searchId" rows="3"></textarea>
+        </div>
 
-    <!-- Adding the Search Button  -->
-    <button class = "button is-medium is-info" type="submit">Search</button>
+        <!-- Adding the Search Button  -->
+        <button class = "button is-medium is-info" type="submit">Search</button>
 
-    <!-- Adding a seperation line -->
-    <div class="line"></div> 
+        <!-- Adding a seperation line -->
+        <div class="line"></div> 
 
-    <!-- Search History -->
-    <div class = "searshHistory is-flex is-flex-wrap-wrap is-flex-direction-column is-justify-content-space-between">
-  
-    </div>
+        <!-- Search History -->
+        <div class = "searshHistory is-flex is-flex-wrap-wrap is-flex-direction-column" id = "searchHistoryId">
+      
+        </div>
+      </div>
+      
 
-    <!-- Information about chosen city -->
-    <div class = "cityInfo">
-      <h2 class = "cityName is-size-4 has-text-weight-bold">City Name And Date</h2>
-      <h3 class = "temp is-size-5">Temp:</h3>
-      <h3 class = "wind is-size-5">Wind:</h3>
-      <h3 class = "humid is-size-5">Humidity:</h3>
-    </div>
+      <!-- Information about chosen city -->
+      <div class = "weaqtherInfo">
+        
+        <div class = "cityInfo">
+          <h2 class = "cityName is-size-4 has-text-weight-bold">City Name And Date</h2>
+          <h3 class = "temp is-size-4">Temp:</h3>
+          <h3 class = "wind is-size-4">Wind:</h3>
+        <h3 class = "humid is-size-4">Humidity:</h3>
+        </div>
 
-    <!-- Five Day Forecast and columns -->
-     <h2 class = "fiveDayForecast is-size-4 has-text-weight-bold">Five Day Forecast</h2>
-    
-    <div class="columns">
-      <div class="column is-half">
-        dayOne
+        <!-- Five Day Forecast and columns -->
+
+        <h2 class = "fiveDayForecast is-size-2 has-text-weight-bold">Five Day Forecast</h2>
+        
+        <div class="forecast">
+          <div class="forecastOne" id = "forecast_1">
+            <div class = "dayOne">DayOne</div>
+            <div class="horizontal-line"></div>
+            <img src="#" alt = "Weather Icon" class = "logoOne">
+            <div class="horizontal-line"></div>
+            <div class = "tempOne">Temp:</div>
+            <div class = "windOne">Wind:</div>
+            <div class = "humidOne">Humidity:</div>
+          </div>
+          <div class="forecastOne" id = "forecast_2">
+            <div class = "dayTwo">DayTwo</div>
+            <div class="horizontal-line"></div>
+            <img src="#" alt = "Weather Icon" class = "logoTwo">
+            <div class="horizontal-line"></div>
+            <div class = "tempTwo">Temp:</div>
+            <div class = "windTwo">Wind:</div>
+            <div class = "humidTwo">Humidity:</div>
+          </div>
+          <div class="forecastOne" id = "forecast_3">
+            <div class = "dayThree">dayThree</div>
+            <div class="horizontal-line"></div>
+            <img src="#" alt = "Weather Icon" class = "logoThree">
+            <div class="horizontal-line"></div>
+            <div class = "tempThree">Temp:</div>
+            <div class = "windThree">Wind:</div>
+            <div class = "humidThree">Humidity:</div>
+          </div>
+          <div class="forecastOne" id = "forecast_4">
+            <div class = "dayFour">dayFour</div>
+            <div class="horizontal-line"></div>
+            <img src="#" alt = "Weather Icon" class = "logoFour">
+            <div class="horizontal-line"></div>
+            <div class = "tempFour">Temp:</div>
+            <div class = "windFour">Wind:</div>
+            <div class = "humidFour">Humidity:</div>
+          </div>
+          <div class="forecastOne" id = "forecast_5">
+            <div class = "dayFive">dayFive</div>
+            <div class="horizontal-line"></div>
+            <img src="#" alt = "Weather Icon" class = "logoFive">
+            <div class="horizontal-line"></div>
+            <div class = "tempFive">Temp:</div>
+            <div class = "windFive">Wind:</div>
+            <div class = "humidFive">Humidity:</div>
+          </div>
+        </div>
       </div>
-      <div class="column is-half">
-        dayTwo
-      </div>
-      <div class="column is-half">
-        dayThree
-      </div>
-      <div class="column is-half">
-        dayFour
-      </div>
-      <div class="column is-half is-link">
-        dayFive
-      </div>
+
     </div>
 
     <!-- Integrating Day.js -->

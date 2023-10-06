@@ -1,3 +1,7 @@
+.navbar-end {
+  margin-right: 30%;
+}
+
 /* Button location */
 .button {
     width: 332px; 
@@ -22,6 +26,21 @@
   margin-left: 10px; 
   width: 332px;
 }
+/* Container to us Flexbox */
+.container {
+  display: flex;
+  width: 100wh;
+  height: 100wh;
+  justify-content: space-around;
+}
+
+.searchHistoryContainer {
+  margin: 10px;
+}
+
+.weaqtherInfo {
+  margin: 5px;
+}
 
 /* History bar location */
 .history {
@@ -33,24 +52,49 @@
 }
 /* Selected City info location */
 .cityInfo {
-  position: absolute;
-  left: 400px;
-  bottom: 480px;
   border-style: solid;
-  padding-right: 50vw;
+  padding-right: 30vw;
   padding-left: 10px;
-  padding-top: 10px;
   padding-bottom: 10px;
+  text-align: left;
 }
-/* Fife Day Forecast text location */
-.fiveDayForecast {
-  position: absolute;
-  left: 400px;
-  bottom: 395px;
-}
+
 /* Five day forecast content location */
-.columns {
-  position: absolute;
-  left: 400px;
-  bottom: 300px;
+.forecast {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.forecastOne {
+  margin-right: 40px;
+  padding: 30px;
+  background-color: hsl(217, 93%, 17%);
+  color: rgb(254, 243, 243);
+  width: 200px;
+  font-size: 20px;
+}
+
+/* Adding Divider */
+.horizontal-line {
+  width: 20px;
+  height: 1px;
+  background-color:  hsl(217, 93%, 17%);
+  margin-top: 20px;
+}
+
+.buttonHistory {
+  background-color: hsl(0, 0%, 71%);
+  border-radius: 5px;
+  height: 35px;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.history {
+  background-color: hsl(0, 0%, 71%);
+  border-radius: 5px;
+  height: 35px;
+  font-size: 20px;
+  margin-top: 5px;
 }
