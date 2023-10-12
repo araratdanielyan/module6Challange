@@ -29,7 +29,10 @@
 /* Container to us Flexbox */
 .container {
   display: flex;
-  align-content: center;
+  align-content: left;
+  width: 100%;
+  
+
 }
 
 .searchHistoryContainer {
@@ -57,7 +60,7 @@
 }
 
 .forecastOne {
-  margin-right: 40px;
+  margin-right: 20px;
   padding: 30px;
   background-color: hsl(217, 93%, 17%);
   color: rgb(254, 243, 243);
